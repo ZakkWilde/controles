@@ -1,0 +1,40 @@
+<mvc:View controllerName="ui5.controles.controller.View1" 
+          xmlns:mvc="sap.ui.core.mvc" 
+          displayBlock="true" 
+          xmlns="sap.m" 
+          xmlns:ndc="sap.ndc">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Text text="Nome" />
+						<Input value="Renan" maxLength="20" busy="true" busyIndicatorSize="Large" />
+						<VBox>
+							<Button text="Salvar" type="Accept" />
+							<ndc:BarcodeScannerButton />
+							<Slider min="10" max="50" value="30" />
+							<RatingIndicator value="3" />
+							<RangeSlider range="10, 60" />
+							<Switch customTextOff="Não" customTextOn="SIM" /> 
+							<StepInput />
+							<SearchField />
+							<ObjectIdentifier title="Mr" text="Renan" />
+							<ObjectStatus icon="sap-icon://cloud" />
+						</VBox>
+					</content>
+					<footer>
+						<Bar>
+							<contentRight>
+								<Button text="Cancelar" />
+							</contentRight>
+							<contentLeft>
+								<SearchField />
+							</contentLeft>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
